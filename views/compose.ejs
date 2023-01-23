@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+    <h1>Escribir Entrada</h1>
+
+    <form action="/compose" method="post">
+        <div class="" mb-3>
+            <label for="formGroupExampleInput" class="form-label">Título</label>
+            <input type="text" class="form-control" name="titulo1" id="formGroupExampleInput"
+                placeholder="Inserte el título">
+        </div>
+        <div class="" mb-3>
+            <label for="formGroupExampleInput" class="form-label">Título</label>
+            <textarea type="text" class="form-control" name="texto1" id="formGroupExampleInput"
+                placeholder="Inserte el texto"> 
+            </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" name="button1">Crear</button>
+    </form>
+    <%- include("partials/footer"); -%>

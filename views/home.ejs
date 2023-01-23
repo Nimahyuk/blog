@@ -1,0 +1,26 @@
+<%- include("partials/header"); -%>
+
+    <h1>Blog</h1>
+    <p>
+        <% homeStartText %>
+    </p>
+    <table>
+
+        <% posts.forEach((post)=> { %>
+            <tr>
+                <td>
+                    <a href="/post/<%= post.titulo1 %>">
+                        <h4>
+                            <%= post.titulo1 %>
+                        </h4>
+                    </a>
+                    <p>
+                        <%= post.texto1.slice(0,100) %>... <a href="/post/<%= post.titulo1 %>">Leer más</a>
+                    </p>
+                </td>
+
+                <% }); %>
+            </tr>
+    </table>
+
+    <%- include("partials/footer"); -%>
